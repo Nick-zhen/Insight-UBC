@@ -3,7 +3,6 @@ import Sections from "./Sections";
 import {InsightError} from "./IInsightFacade";
 import * as fs from "fs-extra";
 import Dataset from "./Dataset";
-
 export default class AddCourseDatasetHelper {
 	public static concatSectionsHelper(reason: any[], sections: Sections[]): Sections[] {
 		reason.forEach((section) => {
