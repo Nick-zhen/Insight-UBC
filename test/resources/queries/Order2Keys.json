@@ -1,0 +1,43 @@
+{
+	"title": "test order 2 keys with transformations",
+	"input": {
+		"WHERE": {
+			"GT": {
+				"courses_avg": 95
+			}
+		},
+		"OPTIONS": {
+			"COLUMNS": [
+				"courses_id",
+				"overallAvg",
+				"maxAvg"
+			],
+			"ORDER": {
+				"dir": "UP",
+				"keys": [
+					"overallAvg",
+					"maxAvg"
+				]
+			}
+		},
+		"TRANSFORMATIONS": {
+			"GROUP": [
+				"courses_id"
+			],
+			"APPLY": [
+				{
+					"overallAvg": {
+						"AVG": "courses_avg"
+					}
+				},
+				{
+					"maxAvg": {
+						"MAX": "courses_avg"
+					}
+				}
+			]
+		}
+	},
+	"errorExpected": false,
+	"with":[{"courses_id":"403","overallAvg":95.07,"maxAvg":95.07},{"courses_id":"482","overallAvg":95.11,"maxAvg":95.11},{"courses_id":"350","overallAvg":95.2,"maxAvg":95.2},{"courses_id":"408","overallAvg":95.22,"maxAvg":95.22},{"courses_id":"320","overallAvg":95.27,"maxAvg":95.27},{"courses_id":"357","overallAvg":95.28,"maxAvg":95.29},{"courses_id":"514","overallAvg":95.36,"maxAvg":95.36},{"courses_id":"586","overallAvg":95.36,"maxAvg":95.36},{"courses_id":"566","overallAvg":95.37,"maxAvg":95.37},{"courses_id":"553","overallAvg":95.39,"maxAvg":95.6},{"courses_id":"592","overallAvg":95.41,"maxAvg":95.9},{"courses_id":"436","overallAvg":95.47,"maxAvg":95.47},{"courses_id":"531","overallAvg":95.48,"maxAvg":95.63},{"courses_id":"411","overallAvg":95.5,"maxAvg":95.5},{"courses_id":"506","overallAvg":95.53,"maxAvg":95.67},{"courses_id":"377","overallAvg":95.58,"maxAvg":95.58},{"courses_id":"533","overallAvg":95.58,"maxAvg":95.96},{"courses_id":"501","overallAvg":95.58,"maxAvg":96},{"courses_id":"521","overallAvg":95.63,"maxAvg":96.47},{"courses_id":"415","overallAvg":95.67,"maxAvg":95.67},{"courses_id":"510","overallAvg":95.67,"maxAvg":95.67},{"courses_id":"432","overallAvg":95.67,"maxAvg":96.21},{"courses_id":"530","overallAvg":95.7,"maxAvg":95.7},{"courses_id":"565","overallAvg":95.71,"maxAvg":96.06},{"courses_id":"528","overallAvg":95.72,"maxAvg":96},{"courses_id":"551","overallAvg":95.72,"maxAvg":96.09},{"courses_id":"279","overallAvg":95.73,"maxAvg":96},{"courses_id":"518","overallAvg":95.75,"maxAvg":95.75},{"courses_id":"537","overallAvg":95.75,"maxAvg":95.75},{"courses_id":"504","overallAvg":95.78,"maxAvg":95.78},{"courses_id":"516","overallAvg":95.8,"maxAvg":96.25},{"courses_id":"508","overallAvg":95.85,"maxAvg":96.27},{"courses_id":"393","overallAvg":95.89,"maxAvg":96.59},{"courses_id":"500","overallAvg":95.92,"maxAvg":97.5},{"courses_id":"545","overallAvg":95.96,"maxAvg":96.83},{"courses_id":"505","overallAvg":95.99,"maxAvg":96.23},{"courses_id":"120","overallAvg":96,"maxAvg":96},{"courses_id":"303","overallAvg":96,"maxAvg":96},{"courses_id":"499","overallAvg":96,"maxAvg":96},{"courses_id":"312","overallAvg":96.03,"maxAvg":96.9},{"courses_id":"568","overallAvg":96.03,"maxAvg":96.9},{"courses_id":"575","overallAvg":96.1,"maxAvg":96.1},{"courses_id":"329","overallAvg":96.11,"maxAvg":96.11},{"courses_id":"520","overallAvg":96.14,"maxAvg":96.46},{"courses_id":"584","overallAvg":96.16,"maxAvg":96.33},{"courses_id":"564","overallAvg":96.25,"maxAvg":96.25},{"courses_id":"526","overallAvg":96.33,"maxAvg":96.33},{"courses_id":"589","overallAvg":96.33,"maxAvg":96.33},{"courses_id":"562","overallAvg":96.36,"maxAvg":96.36},{"courses_id":"200","overallAvg":96.36,"maxAvg":96.96},{"courses_id":"333","overallAvg":96.4,"maxAvg":96.4},{"courses_id":"502","overallAvg":96.44,"maxAvg":96.44},{"courses_id":"595","overallAvg":96.47,"maxAvg":96.47},{"courses_id":"101","overallAvg":96.5,"maxAvg":96.5},{"courses_id":"559","overallAvg":96.5,"maxAvg":96.5},{"courses_id":"596","overallAvg":96.5,"maxAvg":97.09},{"courses_id":"509","overallAvg":96.55,"maxAvg":98.71},{"courses_id":"599","overallAvg":96.63,"maxAvg":98},{"courses_id":"534","overallAvg":96.66,"maxAvg":97.78},{"courses_id":"549","overallAvg":96.67,"maxAvg":97.69},{"courses_id":"515","overallAvg":96.8,"maxAvg":96.8},{"courses_id":"550","overallAvg":96.94,"maxAvg":96.94},{"courses_id":"591","overallAvg":97.03,"maxAvg":97.33},{"courses_id":"541","overallAvg":97.03,"maxAvg":98.75},{"courses_id":"525","overallAvg":97.25,"maxAvg":97.25},{"courses_id":"532","overallAvg":97.48,"maxAvg":97.48},{"courses_id":"449","overallAvg":97.59,"maxAvg":98.8},{"courses_id":"421","overallAvg":97.65,"maxAvg":98.7},{"courses_id":"606","overallAvg":97.67,"maxAvg":97.67},{"courses_id":"578","overallAvg":97.81,"maxAvg":98.58},{"courses_id":"574","overallAvg":98.04,"maxAvg":99.19},{"courses_id":"519","overallAvg":98.45,"maxAvg":98.45},{"courses_id":"300","overallAvg":98.98,"maxAvg":98.98},{"courses_id":"527","overallAvg":99.78,"maxAvg":99.78}]
+}

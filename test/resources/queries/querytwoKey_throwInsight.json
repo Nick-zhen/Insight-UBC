@@ -1,0 +1,21 @@
+{
+  "title": "perform query input 2 keys (reject with insightError)",
+  "input": {
+    "WHERE": {
+      "GT": {
+        "courses_avg": 98,
+        "courses_year": 2015
+      }
+    },
+    "OPTIONS": {
+      "COLUMNS": [
+        "courses_dept",
+        "courses_instructor",
+        "courses_avg"
+      ],
+      "ORDER": "courses_avg"
+    }
+  },
+  "errorExpected": true,
+  "with": "InsightError"
+}

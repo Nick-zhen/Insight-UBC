@@ -1,0 +1,36 @@
+{
+	"title": " ORDER missing 'dir' key (reject with InsightError)",
+	"input": {
+		"WHERE": {
+			"GT": {
+				"courses_avg": 90
+			}
+		},
+		"OPTIONS": {
+			"COLUMNS": [
+				"courses_title",
+				"overallAvg"
+			],
+			"ORDER": {
+				"dr": "DOWN",
+				"keys": [
+					"overallAvg"
+				]
+			}
+		},
+		"TRANSFORMATIONS": {
+			"GROUP": [
+				"courses_title"
+			],
+			"APPLY": [
+				{
+					"overallAvg": {
+						"AVG": "courses_avg"
+					}
+				}
+			]
+		}
+	},
+	"errorExpected": true,
+	"with": "InsightError"
+}

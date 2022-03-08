@@ -1,0 +1,36 @@
+{
+	"title": "Invalid ORDER direction (reject with InsightError)",
+	"input": {
+		"WHERE": {
+			"GT": {
+				"courses_avg": 90
+			}
+		},
+		"OPTIONS": {
+			"COLUMNS": [
+				"courses_title",
+				"overallAvg"
+			],
+			"ORDER": {
+				"dir": "DWN",
+				"keys": [
+					"overallAvg"
+				]
+			}
+		},
+		"TRANSFORMATIONS": {
+			"GROUP": [
+				"courses_title"
+			],
+			"APPLY": [
+				{
+					"overallAvg": {
+						"AVG": "courses_avg"
+					}
+				}
+			]
+		}
+	},
+	"errorExpected": true,
+	"with": "InsightError"
+}

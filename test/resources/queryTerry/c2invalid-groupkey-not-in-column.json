@@ -1,0 +1,28 @@
+{
+	"title": "invalid query with Duplicate APPLY key",
+	"input":{
+		"WHERE": {},
+		"OPTIONS": {
+			"COLUMNS": [
+				"courses_dept",
+				"courses_title",
+				"overallAvg"
+			]
+		},
+		"TRANSFORMATIONS": {
+			"GROUP": [
+				"courses_uuid",
+				"courses_dept"
+			],
+			"APPLY": [
+				{
+					"overallAvg": {
+						"AVG": "courses_avg"
+					}
+				}
+			]
+		}
+	},
+	"errorExpected": true,
+	"with": "InsightError"
+}

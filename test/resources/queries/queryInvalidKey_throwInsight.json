@@ -1,0 +1,29 @@
+{
+  "title": "perform query invalid key (reject with InsightError)",
+  "input": {
+    "WHERE": {
+      "AND": [
+        {
+          "GT": {
+            "courses_av": 90
+          }
+        },
+        {
+          "IS": {
+            "courses_dept": "phth"
+          }
+        }
+      ]
+    },
+    "OPTIONS": {
+      "COLUMNS": [
+        "courses_dept",
+        "courses_id",
+        "courses_avg"
+      ],
+      "ORDER": "courses_avg"
+    }
+  },
+  "errorExpected": true,
+  "with": "InsightError"
+}

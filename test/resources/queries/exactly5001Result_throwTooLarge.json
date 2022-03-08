@@ -1,0 +1,55 @@
+{
+  "title": "the result of query exactly equal 5001",
+  "input": {
+    "WHERE": {
+      "OR": [
+        {
+          "GT": {
+            "courses_avg": 88.8
+          }
+        },
+        {
+          "IS": {
+            "courses_dept": "phth"
+          }
+        },
+        {
+          "IS": {
+            "courses_uuid": "56403"
+          }
+        },
+        {
+          "IS": {
+            "courses_uuid": "56402"
+          }
+        },
+        {
+          "IS": {
+            "courses_uuid": "89536"
+          }
+        },
+        {
+          "IS": {
+            "courses_uuid": "16428"
+          }
+        },
+        {
+          "IS": {
+            "courses_uuid": "84769"
+          }
+        }
+      ]
+    },
+    "OPTIONS": {
+      "COLUMNS": [
+        "courses_dept",
+        "courses_id",
+        "courses_avg",
+        "courses_uuid"
+      ],
+      "ORDER": "courses_avg"
+    }
+  },
+  "errorExpected": true,
+  "with": "ResultTooLargeError"
+}

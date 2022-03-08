@@ -1,0 +1,55 @@
+{
+  "title": "E14 - Pass INPUT INVALID",
+  "input": {
+    "WHERE": {
+      "OR": [
+        {
+          "AND": [
+            {
+              "LT": {
+                "courses_pass": "No"
+              }
+            },
+            {
+              "IS": {
+                "courses_dept": "comm"
+              }
+            }
+          ]
+        },
+        {
+          "AND": [
+            {
+              "NOT": {
+                "GT": {
+                  "courses_avg": 95
+                }
+              }
+            },
+            {
+              "IS": {
+                "courses_dept": "comm"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "OPTIONS": {
+      "COLUMNS": [
+        "courses_dept",
+        "courses_id",
+        "courses_avg",
+        "courses_instructor",
+        "courses_title",
+        "courses_pass",
+        "courses_fail",
+        "courses_audit",
+        "courses_uuid"
+      ],
+      "ORDER": "courses_instructor"
+    }
+  },
+  "errorExpected": true,
+  "with": "InsightError"
+}

@@ -1,0 +1,26 @@
+{
+  "title": "E12 - InvalidColumn for pass",
+  "input": {
+    "WHERE": {
+      "GT": {
+        "courses_avg":96
+      }
+    },
+    "OPTIONS": {
+      "COLUMNS": [
+        "courses_dept",
+        "courses_id",
+        "courses_avg",
+        "courses_instructor",
+        "courses_title",
+        "courses_passsssss",
+        "courses_fail",
+        "courses_audit",
+        "courses_uuid"
+      ],
+      "ORDER": "courses_dept"
+    }
+  },
+  "errorExpected": true,
+  "with": "InsightError"
+}

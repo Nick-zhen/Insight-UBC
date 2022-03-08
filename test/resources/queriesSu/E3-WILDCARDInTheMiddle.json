@@ -1,0 +1,17 @@
+{
+  "title": "E3 - SELECT everything WHERE dept == a*sc",
+  "input": {
+    "WHERE": {
+      "IS": {
+        "courses_dept": "a*sc"
+      }
+    },
+    "OPTIONS": {
+      "COLUMNS": [
+        "courses_dept"
+      ]
+    }
+  },
+  "errorExpected": true,
+  "with": "InsightError"
+}

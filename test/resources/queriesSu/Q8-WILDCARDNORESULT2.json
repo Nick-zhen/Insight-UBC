@@ -1,0 +1,17 @@
+{
+  "title": "Q8 - SELECT all WHERE dept == *tsasdfasdf*",
+  "input": {
+    "WHERE": {
+      "IS": {
+        "courses_dept": "*tsasdfasdf"
+      }
+    },
+    "OPTIONS": {
+      "COLUMNS": [
+        "courses_dept",
+        "courses_id"
+      ]
+    }
+  },
+  "errorExpected": false,
+  "with":[]}

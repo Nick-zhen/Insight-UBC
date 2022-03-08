@@ -1,0 +1,20 @@
+{
+  "title": "E9 - FUNCTION NOT EXIST",
+  "input": {
+    "WHERE": {
+      "LT": {
+        "courses_avg": 45
+      }
+    },
+    "OPTIONS": {
+      "COLUMNS": [
+        "courses_dept",
+        "courses_avg"
+      ],
+      "ORDER": "courses_avg"
+    },
+    "FUNCTION": {}
+  },
+  "errorExpected": true,
+  "with": "InsightError"
+}

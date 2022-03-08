@@ -1,0 +1,6 @@
+{
+  "title": "E5 - No INPUT ERROR",
+  "input": { "OPTIONS": {} },
+  "errorExpected": true,
+  "with": "InsightError"
+}

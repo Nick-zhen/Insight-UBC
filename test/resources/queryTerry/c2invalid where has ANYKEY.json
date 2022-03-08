@@ -1,0 +1,31 @@
+{
+	"title": "Invalid key overallAvg in COLUMNS",
+	"input": {
+		"WHERE": {
+			"GT": {
+				"oveallAVG": 80
+			}
+		},
+		"OPTIONS": {
+			"COLUMNS": [
+				"courses_title",
+				"oveallAVG"
+			]
+		},
+		"TRANSFORMATIONS": {
+			"GROUP": [
+				"courses_dept",
+				"courses_title"
+			],
+			"APPLY": [
+				{
+					"oveallAVG": {
+						"AVG": "courses_avg"
+					}
+				}
+			]
+		}
+	},
+	"errorExpected": true,
+	"with": "InsightError"
+}

@@ -1,0 +1,34 @@
+{
+	"title": " Duplicate APPLY key overallAvg (reject with InsightError)",
+	"input": {
+		"WHERE": {
+			"GT": {
+				"courses_avg": 90
+			}
+		},
+		"OPTIONS": {
+			"COLUMNS": [
+				"courses_id"
+			]
+		},
+		"TRANSFORMATIONS": {
+			"GROUP": [
+				"courses_id"
+			],
+			"APPLY": [
+				{
+					"overallAvg": {
+						"AVG": "courses_avg"
+					}
+				},
+				{
+					"overallAvg": {
+						"MAX": "courses_avg"
+					}
+				}
+			]
+		}
+	},
+	"errorExpected": true,
+	"with": "InsightError"
+}

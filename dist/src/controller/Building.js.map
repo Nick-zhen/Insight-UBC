@@ -1,0 +1,1 @@
+{"version":3,"file":"Building.js","sourceRoot":"","sources":["../../../src/controller/Building.ts"],"names":[],"mappings":";;;AAAA,MAAa,QAAQ;IAKpB,YACC,QAAgB,EAChB,SAAiB,EACjB,OAAe;QAGf,IAAI,CAAC,QAAQ,GAAG,QAAQ,CAAC;QACzB,IAAI,CAAC,SAAS,GAAG,SAAS,CAAC;QAC3B,IAAI,CAAC,OAAO,GAAG,OAAO,CAAC;IACxB,CAAC;CACD;AAfD,4BAeC"}

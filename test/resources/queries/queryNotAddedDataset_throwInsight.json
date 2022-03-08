@@ -1,0 +1,20 @@
+{
+  "title": "perform query a dataset does not be added (reject with InsightError)",
+  "input": {
+    "WHERE": {
+      "GT": {
+        "courses2_avg": 98
+      }
+    },
+    "OPTIONS": {
+      "COLUMNS": [
+        "courses2_dept",
+        "courses2_avg"
+      ],
+      "ORDER": "courses2_avg"
+    }
+  },
+  "errorExpected": true,
+  "with": "InsightError"
+}
+

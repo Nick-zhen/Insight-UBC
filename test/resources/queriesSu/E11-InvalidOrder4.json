@@ -1,0 +1,19 @@
+{
+  "title": "E11 - invalid ORDER type 4",
+  "input": {
+    "WHERE": {
+      "GT": {
+        "courses_avg":65
+      }
+    },
+    "OPTIONS": {
+      "COLUMNS": [
+        "courses_dept",
+        "courses_id"
+      ],
+      "ORDER": "not in the list"
+    }
+  },
+  "errorExpected": true,
+  "with": "InsightError"
+}

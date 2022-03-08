@@ -1,0 +1,40 @@
+{
+	"title": " Apply rule should only have 1 key, has 0",
+	"input": {
+		"WHERE": {
+
+			"AND": [{
+
+				"IS": {
+
+					"rooms_furniture": "*Tables*"
+
+				}
+
+			}, {
+
+				"GT": {
+
+					"rooms_seats": 300
+
+				}
+
+			}]
+
+		},
+		"OPTIONS": {
+			"COLUMNS": [
+				"courses_title",
+				"overallAvg"
+			]
+		},
+		"TRANSFORMATIONS": {
+			"GROUP": [
+				"courses_title"
+			],
+			"APPLY": [{}]
+		}
+	},
+	"errorExpected": true,
+	"with": "InsightError"
+}

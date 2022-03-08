@@ -1,0 +1,29 @@
+{
+  "title": "add a star in string but not affect result",
+  "input": {
+    "WHERE": {
+      "AND": [
+        {
+          "GT": {
+            "courses_avg": 90
+          }
+        },
+        {
+          "IS": {
+            "courses_dept": "phth*"
+          }
+        }
+      ]
+    },
+    "OPTIONS": {
+      "COLUMNS": [
+        "courses_dept",
+        "courses_id",
+        "courses_avg"
+      ],
+      "ORDER": "courses_avg"
+    }
+  },
+  "errorExpected": false,
+  "with":[{"courses_dept":"phth","courses_id":"516","courses_avg":90.03},{"courses_dept":"phth","courses_id":"516","courses_avg":90.03},{"courses_dept":"phth","courses_id":"516","courses_avg":90.35},{"courses_dept":"phth","courses_id":"516","courses_avg":90.35},{"courses_dept":"phth","courses_id":"528","courses_avg":90.61},{"courses_dept":"phth","courses_id":"528","courses_avg":90.61},{"courses_dept":"phth","courses_id":"516","courses_avg":90.99},{"courses_dept":"phth","courses_id":"516","courses_avg":90.99},{"courses_dept":"phth","courses_id":"516","courses_avg":91.89},{"courses_dept":"phth","courses_id":"516","courses_avg":91.89},{"courses_dept":"phth","courses_id":"526","courses_avg":92.04},{"courses_dept":"phth","courses_id":"526","courses_avg":92.04},{"courses_dept":"phth","courses_id":"566","courses_avg":94.32},{"courses_dept":"phth","courses_id":"566","courses_avg":94.32},{"courses_dept":"phth","courses_id":"566","courses_avg":95.37},{"courses_dept":"phth","courses_id":"566","courses_avg":95.37}]
+}

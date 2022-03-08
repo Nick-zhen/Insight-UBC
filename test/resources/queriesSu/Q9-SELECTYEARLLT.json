@@ -1,0 +1,21 @@
+{
+  "title": "Q9 - SELECT dept, avg WHERE year LT 1900",
+  "input": {
+    "WHERE": {
+      "LT": {
+        "courses_year": 1900
+      }
+    },
+    "OPTIONS": {
+      "COLUMNS": [
+        "courses_dept",
+        "courses_title",
+        "courses_id",
+        "courses_uuid",
+        "courses_year"
+      ],
+      "ORDER": "courses_year"
+    }
+  },
+  "errorExpected": false,
+"with":[]}

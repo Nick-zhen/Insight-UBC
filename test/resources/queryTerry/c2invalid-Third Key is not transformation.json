@@ -1,0 +1,46 @@
+{
+	"title": "Excess keys in query",
+	"input": {
+		"WHERE": {
+
+			"AND": [{
+
+				"IS": {
+
+					"rooms_furniture": "*Tables*"
+
+				}
+
+			}, {
+
+				"GT": {
+
+					"rooms_seats": 300
+
+				}
+
+			}]
+
+		},
+		"OPTIONS": {
+			"COLUMNS": [
+				"courses_title",
+				"overallAvg"
+			]
+		},
+		"good": {
+			"GROUP": [
+				"courses_title"
+			],
+			"APPLY": [
+				{
+					"overallAvg": {
+						"AVG": "courses_avg"
+					}
+				}
+			]
+		}
+	},
+	"errorExpected": true,
+	"with": "InsightError"
+}

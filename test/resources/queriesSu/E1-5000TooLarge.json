@@ -1,0 +1,18 @@
+{
+  "title": "E1 - over 5000 entries",
+  "input": {
+    "WHERE": {
+      "GT": {
+        "courses_avg": 0
+      }
+    },
+    "OPTIONS": {
+      "COLUMNS": [
+        "courses_dept",
+        "courses_avg"
+      ]
+    }
+  },
+  "errorExpected":true,
+  "with": "ResultTooLargeError"
+}

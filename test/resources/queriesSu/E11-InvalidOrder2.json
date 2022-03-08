@@ -1,0 +1,19 @@
+{
+  "title": "E11 - invalid ORDER 2",
+  "input": {
+    "WHERE": {
+      "GT": {
+        "courses_avg":65
+      }
+    },
+    "OPTIONS": {
+      "COLUMNS": [
+        "courses_dept",
+        "courses_id"
+      ],
+      "ORDER": 12
+    }
+  },
+  "errorExpected": true,
+  "with": "InsightError"
+}

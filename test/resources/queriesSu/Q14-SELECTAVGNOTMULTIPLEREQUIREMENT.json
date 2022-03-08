@@ -1,0 +1,54 @@
+{
+  "title": "Q14 - SELECT all WHERE avg is NOT < 92 && dept == 'comm' || avg > 85 && dept == 'atsc' ORDER BY avg",
+  "input": {
+    "WHERE": {
+      "OR": [
+        {
+          "AND":[
+            {
+              "GT": {
+                "courses_avg":85
+              }
+            },
+            {
+              "IS": {
+                "courses_dept":"atsc"
+              }
+            }
+          ]
+        },
+        {
+          "AND":[
+            {
+              "NOT": {
+                "LT": {
+                  "courses_avg": 92
+                }
+              }
+            },
+            {
+              "IS": {
+                "courses_dept": "comm"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "OPTIONS": {
+      "COLUMNS": [
+        "courses_dept",
+        "courses_id",
+        "courses_avg",
+        "courses_instructor",
+        "courses_title",
+        "courses_pass",
+        "courses_fail",
+        "courses_audit",
+        "courses_uuid"
+      ],
+      "ORDER": "courses_avg"
+    }
+  },
+  "errorExpected": false,
+"with":[{"courses_dept":"atsc","courses_id":"405","courses_avg":85.17,"courses_instructor":"","courses_title":"cloud phys&chem","courses_pass":12,"courses_fail":0,"courses_audit":0,"courses_uuid":"36743"},{"courses_dept":"atsc","courses_id":"405","courses_avg":85.17,"courses_instructor":"li, zhiying;stull, roland","courses_title":"cloud phys&chem","courses_pass":12,"courses_fail":0,"courses_audit":0,"courses_uuid":"36742"},{"courses_dept":"atsc","courses_id":"201","courses_avg":85.41,"courses_instructor":"","courses_title":"meteor of storms","courses_pass":81,"courses_fail":0,"courses_audit":0,"courses_uuid":"70400"},{"courses_dept":"atsc","courses_id":"201","courses_avg":85.41,"courses_instructor":"stull, roland","courses_title":"meteor of storms","courses_pass":81,"courses_fail":0,"courses_audit":0,"courses_uuid":"70399"},{"courses_dept":"atsc","courses_id":"201","courses_avg":85.75,"courses_instructor":"","courses_title":"meteor of storms","courses_pass":82,"courses_fail":2,"courses_audit":0,"courses_uuid":"36739"},{"courses_dept":"atsc","courses_id":"201","courses_avg":85.75,"courses_instructor":"stull, roland","courses_title":"meteor of storms","courses_pass":82,"courses_fail":2,"courses_audit":0,"courses_uuid":"36738"},{"courses_dept":"atsc","courses_id":"212","courses_avg":86,"courses_instructor":"","courses_title":"intro comput lab","courses_pass":9,"courses_fail":0,"courses_audit":0,"courses_uuid":"77573"},{"courses_dept":"atsc","courses_id":"212","courses_avg":86,"courses_instructor":"stull, roland","courses_title":"intro comput lab","courses_pass":9,"courses_fail":0,"courses_audit":0,"courses_uuid":"77572"},{"courses_dept":"atsc","courses_id":"500","courses_avg":87,"courses_instructor":"","courses_title":"bndry-lyr metrly","courses_pass":6,"courses_fail":0,"courses_audit":1,"courses_uuid":"7649"},{"courses_dept":"atsc","courses_id":"500","courses_avg":87,"courses_instructor":"austin, philip;reuten, christian","courses_title":"bndry-lyr metrly","courses_pass":6,"courses_fail":0,"courses_audit":1,"courses_uuid":"7648"},{"courses_dept":"atsc","courses_id":"406","courses_avg":87.33,"courses_instructor":"","courses_title":"oprtl meteorolgy","courses_pass":6,"courses_fail":0,"courses_audit":0,"courses_uuid":"36745"},{"courses_dept":"atsc","courses_id":"406","courses_avg":87.33,"courses_instructor":"siuta, david","courses_title":"oprtl meteorolgy","courses_pass":6,"courses_fail":0,"courses_audit":0,"courses_uuid":"36744"},{"courses_dept":"atsc","courses_id":"500","courses_avg":87.5,"courses_instructor":"","courses_title":"bndry-lyr metrly","courses_pass":4,"courses_fail":0,"courses_audit":0,"courses_uuid":"83568"},{"courses_dept":"atsc","courses_id":"500","courses_avg":87.5,"courses_instructor":"austin, philip","courses_title":"bndry-lyr metrly","courses_pass":4,"courses_fail":0,"courses_audit":0,"courses_uuid":"83567"},{"courses_dept":"atsc","courses_id":"406","courses_avg":89,"courses_instructor":"","courses_title":"oprtl meteorolgy","courses_pass":7,"courses_fail":0,"courses_audit":0,"courses_uuid":"10464"},{"courses_dept":"atsc","courses_id":"406","courses_avg":89,"courses_instructor":"siuta, david","courses_title":"oprtl meteorolgy","courses_pass":7,"courses_fail":0,"courses_audit":0,"courses_uuid":"10463"},{"courses_dept":"atsc","courses_id":"500","courses_avg":92,"courses_instructor":"","courses_title":"bndry-lyr metrly","courses_pass":5,"courses_fail":0,"courses_audit":0,"courses_uuid":"36747"},{"courses_dept":"atsc","courses_id":"500","courses_avg":92,"courses_instructor":"stull, roland","courses_title":"bndry-lyr metrly","courses_pass":5,"courses_fail":0,"courses_audit":0,"courses_uuid":"36746"},{"courses_dept":"comm","courses_id":"581","courses_avg":92.45,"courses_instructor":"","courses_title":"stats methlgy i","courses_pass":11,"courses_fail":0,"courses_audit":0,"courses_uuid":"1115"},{"courses_dept":"comm","courses_id":"581","courses_avg":92.45,"courses_instructor":"ghement, isabella","courses_title":"stats methlgy i","courses_pass":11,"courses_fail":0,"courses_audit":0,"courses_uuid":"1114"},{"courses_dept":"comm","courses_id":"581","courses_avg":94.5,"courses_instructor":"","courses_title":"stats methlgy i","courses_pass":18,"courses_fail":0,"courses_audit":0,"courses_uuid":"44337"},{"courses_dept":"comm","courses_id":"581","courses_avg":94.5,"courses_instructor":"ghement, isabella","courses_title":"stats methlgy i","courses_pass":18,"courses_fail":0,"courses_audit":0,"courses_uuid":"44336"},{"courses_dept":"comm","courses_id":"581","courses_avg":94.56,"courses_instructor":"","courses_title":"stats methlgy i","courses_pass":16,"courses_fail":0,"courses_audit":0,"courses_uuid":"58117"},{"courses_dept":"comm","courses_id":"581","courses_avg":94.56,"courses_instructor":"ghement, isabella","courses_title":"stats methlgy i","courses_pass":16,"courses_fail":0,"courses_audit":0,"courses_uuid":"58116"},{"courses_dept":"comm","courses_id":"581","courses_avg":94.75,"courses_instructor":"","courses_title":"stats methlgy i","courses_pass":12,"courses_fail":0,"courses_audit":0,"courses_uuid":"71564"},{"courses_dept":"comm","courses_id":"581","courses_avg":94.75,"courses_instructor":"ghement, isabella","courses_title":"stats methlgy i","courses_pass":12,"courses_fail":0,"courses_audit":0,"courses_uuid":"71563"}]}

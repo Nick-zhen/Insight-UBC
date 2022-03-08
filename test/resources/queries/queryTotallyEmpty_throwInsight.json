@@ -1,0 +1,9 @@
+{
+  "title": "a totally empty query (throw InsightError)",
+  "input": {
+    "WHERE": {},
+    "OPTIONS": {}
+  },
+  "errorExpected": true,
+  "with": "InsightError"
+}

@@ -1,0 +1,16 @@
+{
+  "title": "Q4 - SELECT everything WHERE title == info sys mngt",
+  "input": {
+    "WHERE": {
+      "IS": {
+        "courses_title": "info sys mngt"
+      }
+    },
+    "OPTIONS": {
+      "COLUMNS": [
+        "courses_title"
+      ]
+    }
+  },
+  "errorExpected": false,
+"with":[{"courses_title":"info sys mngt"},{"courses_title":"info sys mngt"},{"courses_title":"info sys mngt"},{"courses_title":"info sys mngt"},{"courses_title":"info sys mngt"},{"courses_title":"info sys mngt"},{"courses_title":"info sys mngt"},{"courses_title":"info sys mngt"},{"courses_title":"info sys mngt"},{"courses_title":"info sys mngt"},{"courses_title":"info sys mngt"},{"courses_title":"info sys mngt"},{"courses_title":"info sys mngt"},{"courses_title":"info sys mngt"},{"courses_title":"info sys mngt"},{"courses_title":"info sys mngt"},{"courses_title":"info sys mngt"},{"courses_title":"info sys mngt"},{"courses_title":"info sys mngt"},{"courses_title":"info sys mngt"},{"courses_title":"info sys mngt"},{"courses_title":"info sys mngt"},{"courses_title":"info sys mngt"},{"courses_title":"info sys mngt"},{"courses_title":"info sys mngt"},{"courses_title":"info sys mngt"},{"courses_title":"info sys mngt"},{"courses_title":"info sys mngt"},{"courses_title":"info sys mngt"},{"courses_title":"info sys mngt"},{"courses_title":"info sys mngt"},{"courses_title":"info sys mngt"},{"courses_title":"info sys mngt"},{"courses_title":"info sys mngt"},{"courses_title":"info sys mngt"},{"courses_title":"info sys mngt"},{"courses_title":"info sys mngt"},{"courses_title":"info sys mngt"},{"courses_title":"info sys mngt"},{"courses_title":"info sys mngt"},{"courses_title":"info sys mngt"},{"courses_title":"info sys mngt"},{"courses_title":"info sys mngt"},{"courses_title":"info sys mngt"},{"courses_title":"info sys mngt"},{"courses_title":"info sys mngt"},{"courses_title":"info sys mngt"},{"courses_title":"info sys mngt"},{"courses_title":"info sys mngt"},{"courses_title":"info sys mngt"},{"courses_title":"info sys mngt"},{"courses_title":"info sys mngt"},{"courses_title":"info sys mngt"},{"courses_title":"info sys mngt"},{"courses_title":"info sys mngt"},{"courses_title":"info sys mngt"},{"courses_title":"info sys mngt"},{"courses_title":"info sys mngt"},{"courses_title":"info sys mngt"},{"courses_title":"info sys mngt"},{"courses_title":"info sys mngt"},{"courses_title":"info sys mngt"},{"courses_title":"info sys mngt"},{"courses_title":"info sys mngt"}]}

@@ -1,0 +1,20 @@
+{
+  "title": "Q8 - SELECT all WHERE dept == ats*",
+  "input": {
+    "WHERE": {
+      "IS": {
+        "courses_dept": "ats*"
+      }
+    },
+    "OPTIONS": {
+      "COLUMNS": [
+        "courses_dept",
+        "courses_id"
+      ]
+    }
+  },
+  "errorExpected": false,
+
+
+
+  "with":[{"courses_dept":"atsc","courses_id":"201"},{"courses_dept":"atsc","courses_id":"201"},{"courses_dept":"atsc","courses_id":"201"},{"courses_dept":"atsc","courses_id":"201"},{"courses_dept":"atsc","courses_id":"201"},{"courses_dept":"atsc","courses_id":"201"},{"courses_dept":"atsc","courses_id":"201"},{"courses_dept":"atsc","courses_id":"201"},{"courses_dept":"atsc","courses_id":"201"},{"courses_dept":"atsc","courses_id":"201"},{"courses_dept":"atsc","courses_id":"201"},{"courses_dept":"atsc","courses_id":"201"},{"courses_dept":"atsc","courses_id":"201"},{"courses_dept":"atsc","courses_id":"201"},{"courses_dept":"atsc","courses_id":"201"},{"courses_dept":"atsc","courses_id":"201"},{"courses_dept":"atsc","courses_id":"201"},{"courses_dept":"atsc","courses_id":"201"},{"courses_dept":"atsc","courses_id":"212"},{"courses_dept":"atsc","courses_id":"212"},{"courses_dept":"atsc","courses_id":"212"},{"courses_dept":"atsc","courses_id":"212"},{"courses_dept":"atsc","courses_id":"212"},{"courses_dept":"atsc","courses_id":"212"},{"courses_dept":"atsc","courses_id":"212"},{"courses_dept":"atsc","courses_id":"212"},{"courses_dept":"atsc","courses_id":"212"},{"courses_dept":"atsc","courses_id":"212"},{"courses_dept":"atsc","courses_id":"212"},{"courses_dept":"atsc","courses_id":"212"},{"courses_dept":"atsc","courses_id":"404"},{"courses_dept":"atsc","courses_id":"404"},{"courses_dept":"atsc","courses_id":"404"},{"courses_dept":"atsc","courses_id":"404"},{"courses_dept":"atsc","courses_id":"404"},{"courses_dept":"atsc","courses_id":"404"},{"courses_dept":"atsc","courses_id":"404"},{"courses_dept":"atsc","courses_id":"404"},{"courses_dept":"atsc","courses_id":"404"},{"courses_dept":"atsc","courses_id":"404"},{"courses_dept":"atsc","courses_id":"405"},{"courses_dept":"atsc","courses_id":"405"},{"courses_dept":"atsc","courses_id":"405"},{"courses_dept":"atsc","courses_id":"405"},{"courses_dept":"atsc","courses_id":"405"},{"courses_dept":"atsc","courses_id":"405"},{"courses_dept":"atsc","courses_id":"405"},{"courses_dept":"atsc","courses_id":"405"},{"courses_dept":"atsc","courses_id":"405"},{"courses_dept":"atsc","courses_id":"405"},{"courses_dept":"atsc","courses_id":"406"},{"courses_dept":"atsc","courses_id":"406"},{"courses_dept":"atsc","courses_id":"406"},{"courses_dept":"atsc","courses_id":"406"},{"courses_dept":"atsc","courses_id":"406"},{"courses_dept":"atsc","courses_id":"406"},{"courses_dept":"atsc","courses_id":"406"},{"courses_dept":"atsc","courses_id":"406"},{"courses_dept":"atsc","courses_id":"406"},{"courses_dept":"atsc","courses_id":"406"},{"courses_dept":"atsc","courses_id":"409"},{"courses_dept":"atsc","courses_id":"409"},{"courses_dept":"atsc","courses_id":"409"},{"courses_dept":"atsc","courses_id":"409"},{"courses_dept":"atsc","courses_id":"409"},{"courses_dept":"atsc","courses_id":"409"},{"courses_dept":"atsc","courses_id":"500"},{"courses_dept":"atsc","courses_id":"500"},{"courses_dept":"atsc","courses_id":"500"},{"courses_dept":"atsc","courses_id":"500"},{"courses_dept":"atsc","courses_id":"500"},{"courses_dept":"atsc","courses_id":"500"},{"courses_dept":"atsc","courses_id":"500"},{"courses_dept":"atsc","courses_id":"500"},{"courses_dept":"atsc","courses_id":"500"},{"courses_dept":"atsc","courses_id":"500"},{"courses_dept":"atsc","courses_id":"506"}]}

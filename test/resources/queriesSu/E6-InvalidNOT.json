@@ -1,0 +1,55 @@
+{
+  "title": "E6 - Invalid NOT",
+  "input": {
+    "WHERE": {
+      "OR": [
+        {
+          "AND":[
+            {
+              "GT": {
+                "courses_avg":85
+              }
+            },
+            {
+              "IS": {
+                "courses_dept":"atsc"
+              }
+            }
+          ]
+        },
+        {
+          "AND":[
+            {
+              "NOTTTTT": {
+                "LT": {
+                  "courses_avg": 92
+                }
+              }
+            },
+            {
+              "IS": {
+                "courses_dept": "comm"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "OPTIONS": {
+      "COLUMNS": [
+        "courses_dept",
+        "courses_id",
+        "courses_avg",
+        "courses_instructor",
+        "courses_title",
+        "courses_pass",
+        "courses_fail",
+        "courses_audit",
+        "courses_uuid"
+      ],
+      "ORDER": "courses_avg"
+    }
+  },
+  "errorExpected": true,
+  "with": "InsightError"
+}

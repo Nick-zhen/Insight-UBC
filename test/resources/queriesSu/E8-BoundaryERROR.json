@@ -1,0 +1,30 @@
+{
+  "title": "E8 - Return data too large",
+  "input": {
+    "WHERE": {
+      "NOT": {
+        "OR": [
+          {
+            "EQ": {
+              "courses_avg": 80
+            }
+          },
+          {
+            "GT": {
+              "courses_avg": 80
+            }
+          }
+        ]
+      }
+    },
+    "OPTIONS": {
+      "COLUMNS": [
+        "courses_dept",
+        "courses_avg"
+      ],
+      "ORDER": "courses_avg"
+    }
+  },
+  "errorExpected": true,
+  "with": "ResultTooLargeError"
+}

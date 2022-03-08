@@ -1,0 +1,27 @@
+{
+  "title": "E6 - Invalid LT",
+  "input": {
+    "WHERE": {
+      "OR": [
+        {
+          "LTTTTT": {
+            "courses_avg": 98
+          }
+        },
+        {
+          "IS": {
+            "courses_instructor": "cox, barbara"
+          }
+        }
+      ]
+    },
+    "OPTIONS": {
+      "COLUMNS": [
+        "courses_avg",
+        "courses_instructor"
+      ]
+    }
+  },
+  "errorExpected": true,
+  "with": "InsightError"
+}

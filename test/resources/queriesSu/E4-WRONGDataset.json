@@ -1,0 +1,27 @@
+{
+  "title": "E4 - Dataset being added is wrong",
+  "input": {
+    "WHERE": {
+      "AND": [
+        {
+          "GT": {
+            "wrong_avg": 91
+          }
+        },
+        {
+          "IS": {
+            "wrong_instructor": "*"
+          }
+        }
+      ]
+    },
+    "OPTIONS": {
+      "COLUMNS": [
+        "wrong_avg",
+        "wrong_instructor"
+      ]
+    }
+  },
+  "errorExpected": true,
+  "with": "InsightError"
+}

@@ -1,0 +1,19 @@
+{
+  "title": "E6 - IS Type mismatch",
+  "input": {
+    "WHERE": {
+      "IS": {
+        "courses_avg": 59
+      }
+    },
+    "OPTIONS": {
+      "COLUMNS": [
+        "courses_dept",
+        "courses_id"
+      ],
+      "ORDER": "courses_id"
+    }
+  },
+  "errorExpected": true,
+  "with": "InsightError"
+}

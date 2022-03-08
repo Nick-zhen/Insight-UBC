@@ -1,0 +1,30 @@
+{
+  "title": "Q15 - SELECT both LT and GT for the same number, should return empty",
+  "input": {
+    "WHERE": {
+      "AND": [
+        {
+          "GT": {
+            "courses_avg": 92
+          }
+        },
+        {
+          "LT": {
+            "courses_avg": 92
+          }
+        }
+      ]
+    },
+    "OPTIONS": {
+      "COLUMNS": [
+        "courses_dept",
+        "courses_avg"
+      ],
+      "ORDER": "courses_avg"
+    }
+  },
+  "errorExpected": false,
+  "with": [
+
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "title": "E6 - invalid String Error 2",
+  "input": {
+    "WHERE": {
+      "GTAAAAA": {
+        "courses_avg":65
+      }
+    },
+    "OPTIONS": {
+      "COLUMNS": [
+        "courses_dept",
+        "courses_avg",
+        "courses_id"
+      ],
+      "ORDER": "courses_dept"
+    }
+  },
+  "errorExpected": true,
+  "with": "InsightError"
+}

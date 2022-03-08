@@ -1,0 +1,19 @@
+{
+  "title": "E6 - invalid Column ID",
+  "input": {
+    "WHERE": {
+      "GT": {
+        "courses_avg":45
+      }
+    },
+    "OPTIONS": {
+      "COLUMNS": [
+        "couasdfesdadfa_dept",
+        "courses_avg"
+      ],
+      "ORDER": "courses_avg"
+    }
+  },
+  "errorExpected": true,
+  "with": "InsightError"
+}

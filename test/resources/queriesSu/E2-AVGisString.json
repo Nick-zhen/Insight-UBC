@@ -1,0 +1,19 @@
+{
+  "title": "E2 - SELECT dept, AVG WHERE AVG > 50",
+  "input": {
+    "WHERE": {
+      "GT": {
+        "courses_avg": "bcaa"
+      }
+    },
+    "OPTIONS": {
+      "COLUMNS": [
+        "courses_dept",
+        "courses_avg"
+      ],
+      "ORDER": "courses_avg"
+    }
+  },
+  "errorExpected": true,
+  "with": "InsightError"
+}

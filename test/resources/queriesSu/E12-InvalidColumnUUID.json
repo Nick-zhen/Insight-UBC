@@ -1,0 +1,26 @@
+{
+  "title": "E12 - InvalidColumn for UUID",
+  "input": {
+    "WHERE": {
+      "GT": {
+        "courses_avg":96
+      }
+    },
+    "OPTIONS": {
+      "COLUMNS": [
+        "courses_dept",
+        "courses_id",
+        "courses_avg",
+        "courses_instructor",
+        "courses_title",
+        "courses_pass",
+        "courses_fail",
+        "courses_audit",
+        "courses_uuidDDDDD"
+      ],
+      "ORDER": "courses_dept"
+    }
+  },
+  "errorExpected": true,
+  "with": "InsightError"
+}

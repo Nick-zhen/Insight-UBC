@@ -1,0 +1,7 @@
+{
+  "title": "E6 - invalid input error",
+  "input": { "OPddasddddasddfas": {} },
+  "errorExpected": true,
+  "with": "InsightError"
+}
+

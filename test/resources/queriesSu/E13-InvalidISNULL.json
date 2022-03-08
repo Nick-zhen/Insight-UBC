@@ -1,0 +1,27 @@
+{
+  "title": "E13 - Invalid IS NULL",
+  "input": {
+    "WHERE": {
+      "OR": [
+        {
+          "GT": {
+            "courses_avg": 99
+          }
+        },
+        {
+          "IS": {
+            "courses_instructor": null
+          }
+        }
+      ]
+    },
+    "OPTIONS": {
+      "COLUMNS": [
+        "courses_avg",
+        "courses_instructor"
+      ]
+    }
+  },
+  "errorExpected": true,
+  "with": "InsightError"
+}

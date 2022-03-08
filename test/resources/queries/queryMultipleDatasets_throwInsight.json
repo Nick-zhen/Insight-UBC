@@ -1,0 +1,28 @@
+{
+  "title": "perform query multiple dataset (reject with InsightError)",
+  "input": {
+    "WHERE": {
+      "OR": [
+        {
+          "GT": {
+            "courses_avg": 98
+          }
+        },
+        {
+          "IS": {
+            "courses2_dept": "cpsc"
+          }
+        }
+      ]
+    },
+    "OPTIONS": {
+      "COLUMNS": [
+        "courses_dept",
+        "courses_avg"
+      ],
+      "ORDER": "courses_avg"
+    }
+  },
+  "errorExpected": true,
+  "with": "InsightError"
+}

@@ -1,0 +1,19 @@
+{
+  "title": "E10 - Invalid Input Comparison GT",
+  "input": {
+    "WHERE": {
+      "GT": {
+        "courses_instructor": "cox, barbara"
+      }
+    },
+    "OPTIONS": {
+      "COLUMNS": [
+        "courses_dept",
+        "courses_id"
+      ],
+      "ORDER": "courses_id"
+    }
+  },
+  "errorExpected": true,
+  "with": "InsightError"
+}
